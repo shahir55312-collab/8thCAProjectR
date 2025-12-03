@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event Management</title>
+    <style>
+        /* Beginner-friendly, minimal CSS for Event Management page */
+        *{box-sizing:border-box}
+        body{font-family: Arial, Helvetica, sans-serif; margin:0; background:#f5f7f8; color:#222}
+        header{background:#0b615e;color:#fff;padding:1rem 0}
+        header h1{margin:0;font-size:1.4rem}
+        header p{margin:0.25rem 0 0;color:#d0efee}
+        header nav{margin-top:0.6rem}
+        header nav a{color:#fff;text-decoration:none;margin:0 .5rem;font-weight:600}
+        main{max-width:960px;margin:1rem auto;padding:0 1rem}
+        section{background:#fff;padding:1rem;border-radius:6px;margin-bottom:1rem;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+        ul{padding-left:1.2rem}
+        li{margin-bottom:.6rem}
+        .meta{font-size:0.95rem;color:#555}
+        form input[type="text"], form input[type="email"], form input[type="number"], form textarea{width:100%;padding:.5rem;border:1px solid #e0e0e0;border-radius:4px;margin-top:.3rem}
+        form button{background:#0b615e;color:#fff;border:none;padding:.6rem .9rem;border-radius:4px;cursor:pointer}
+        form button:hover{background:#0e8b87}
+        blockquote{background:#f0f9f8;padding:1rem;border-left:4px solid #0b615e;border-radius:4px;margin-bottom:.8rem;color:#114e4c}
+        footer{text-align:center;color:#666;padding:1rem 0}
+        @media (max-width:480px){
+            header h1{font-size:1.1rem}
+            header nav{font-size:0.95rem}
+            main{padding:0 .6rem}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bright Events</h1>
+        <p>We plan, manage, and make your events memorable.</p>
+        <nav>
+            <a href="#events">Events</a> |
+            <a href="#booking">Booking</a> |
+            <a href="#testimonials">Testimonials</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>
+                    <strong>Summer Gala — June 20, 2026</strong><br>
+                    Venue: Grand Hall, City Center<br>
+                    Price: $50 per person (includes dinner)
+                </li>
+                <li>
+                    <strong>Corporate Workshop — July 10, 2026</strong><br>
+                    Venue: Riverside Conference Rooms<br>
+                    Price: $200 per group (up to 10 people)
+                </li>
+                <li>
+                    <strong>Outdoor Concert — August 5, 2026</strong><br>
+                    Venue: Lakeside Park<br>
+                    Price: Free (donations welcome)
+                </li>
+            </ul>
+        </section>
+
+        <section id="booking">
+            <h2>Booking Information</h2>
+            <p>To book an event or reserve tickets, please fill the booking request form below. We will reply within 48 hours with confirmation and payment instructions.</p>
+
+            <h3>How bookings work</h3>
+            <ol>
+                <li>Submit booking request using the form.</li>
+                <li>We send availability and invoice by email.</li>
+                <li>Confirm and pay the invoice to secure your booking.</li>
+                <li>Receive your booking confirmation and tickets (if applicable).</li>
+            </ol>
+
+            <h3>Booking Request</h3>
+            <form action="#" method="post">
+                <label for="bname">Name:</label><br>
+                <input type="text" id="bname" name="name" required><br><br>
+
+                <label for="bemail">Email:</label><br>
+                <input type="email" id="bemail" name="email" required><br><br>
+
+                <label for="bevent">Event (choose or type):</label><br>
+                <input type="text" id="bevent" name="event" placeholder="e.g. Summer Gala"><br><br>
+
+                <label for="bcount">Number of attendees:</label><br>
+                <input type="number" id="bcount" name="attendees" min="1"><br><br>
+
+                <label for="bmessage">Additional message:</label><br>
+                <textarea id="bmessage" name="message" rows="4"></textarea><br><br>
+
+                <button type="submit">Send Booking Request</button>
+            </form>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>
+                "Bright Events made our company anniversary perfect. Professional team and excellent service." — Sarah L., Marketing Manager
+            </blockquote>
+            <blockquote>
+                "The outdoor concert was organized smoothly. Great sound and friendly staff." — Daniel R., Attendee
+            </blockquote>
+            <blockquote>
+                "We loved the attention to detail at our wedding. Highly recommended!" — Priya & Amit
+            </blockquote>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: bookingseventnow@gmail.com<br>
+               Phone: 99999999</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bright Events</p>
+    </footer>
+</body>
+</html>
